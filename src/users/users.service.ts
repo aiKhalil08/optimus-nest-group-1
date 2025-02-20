@@ -19,7 +19,7 @@ export class UsersService {
             });
 
             if (existingUser) {
-                throw new ConflictException('Email already exists');
+                throw new ConflictException('Email already taken');
             }
 
             const newUser = new User();
